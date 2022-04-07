@@ -29,9 +29,17 @@ npm install html-webpack-plugin html-loader -D
 npm install babel-loader @babel/core @babel/preset-env @babel/preset-react -D
 ```
 
-# clase 16, configurar webpack
+# clase 16, configurar webpack, babel
 
 creamos el objeto webpack.config.js, configuraremos el proyecto, que archivos tiene que detectar, las reglas, que plugins usar..
 
 con lo hecho en esta clase, se va a poder ejecutar npm start, e iniciar un servidor de desarrollo.
 El cual tomara todos los .js y .jsx de src, los compilara a la version mas compatible con babel, y enlazara el html con el js. poniendolo en dist/
+
+# clase 17 configurar webpack css
+
+configuracion de webpack para enlazar css.
+
+```bash
+npm install css-loader mini-css-extract-plugin -D
+```
