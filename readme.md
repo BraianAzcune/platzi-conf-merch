@@ -92,7 +92,7 @@ dentro de webpack en la seccion de rules hay que agregar su regla:
 curso recomendado:
 https://platzi.com/cursos/preprocesadores/
 
-# clase 18 garantizar desarrollo seguro.
+# clase 18 garantizar desarrollo seguro. linter
 
 utilizaremos un linter para que nos advierta de errores en el codigo y un formateador para que quede legible el codigo.
 
@@ -118,3 +118,31 @@ y entrar a los settings de vscode, y configurar el formateado al guardar "format
 y configurar el formateador por defecto a prettier.
 
 tambien se modifico npm start, para que formate el codigo y luego ejecute.
+
+# clase 20 ejecutar test antes de commit y push
+para evitar enviar bugs, existe una herramienta de node llamda husky. En realidad es un hook para git.
+nos permite programar tareas a ejecutar antes de hacer algo con git. (linter, formateador, etc)
+
+Pero no usaremos husky, al menos no de forma directa:
+
+instalaremos lint-staged que instalara y configurara husky por nosotros.
+
+```bash
+npx mrm@2 lint-staged
+```
+
+luego de eso se debe configurar en package.json, una serie de tareas a ejecutar antes de hacer commit.
+
+```js
+"lint-staged": {
+	"**/*.{js,jsx}": [
+		"npm run lint",
+		"npm run format",
+		"npm run test"
+	]
+}
+```
+en el estado actual lo  que hace esto es:
+
+Ante un commit, si hay algun archivo que sea .js o .jsx, entonces ejecutara esos tres comandos, si todos salen bien. confirmara el commit, sino lo rechaza.
+
