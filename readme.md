@@ -43,3 +43,51 @@ configuracion de webpack para enlazar css.
 ```bash
 npm install css-loader mini-css-extract-plugin -D
 ```
+
+# clase 17 webpack agregar preprocesadores css
+
+hay 3 preprocesadores mas populares, veremos lo necesario para configurar cada uno:
+
+para cualquiera de los tres hay que instalar sus dependencias:
+
+```bash
+npm install sass-loader node-sass -D
+npm install less less-loader -D
+npm install stylus stylus-loader -D
+```
+
+luego para configurarlos todos son iguales:
+dentro de webpack en la seccion de rules hay que agregar su regla:
+
+```js
+// sass
+{
+	test: /\.scss$/,
+	loader: [
+		MiniCSSExtractPlugin.loader,
+		'css-loader',
+		'sass-loader'
+	]
+}
+// less
+{
+	test: /\.less$/,
+	loader: [
+		MiniCSSExtractPlugin.loader,
+		'css-loader',
+		'less-loader'
+	]
+}
+// stylus
+{
+	test: /\.styl$/,
+	loader: [
+		MiniCSSExtractPlugin.loader,
+		'css-loader',
+		'stylus-loader'
+	]
+}
+```
+
+curso recomendado:
+https://platzi.com/cursos/preprocesadores/
