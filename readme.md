@@ -91,3 +91,30 @@ dentro de webpack en la seccion de rules hay que agregar su regla:
 
 curso recomendado:
 https://platzi.com/cursos/preprocesadores/
+
+# clase 18 garantizar desarrollo seguro.
+
+utilizaremos un linter para que nos advierta de errores en el codigo y un formateador para que quede legible el codigo.
+
+```bash
+npm install -g eslint
+npm install eslint @babel/eslint-parser eslint-config-airbnb eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react -D
+npm install prettier eslint-plugin-prettier eslint-config-prettier -D
+```
+
+## Nota babel-eslint deprecated
+
+una de las cosas que se instalo babel-eslint esta deprecated, y hay que cambiarlo a uno nuevo.
+
+https://tjaddison.com/blog/2021/03/updating-babel-eslint-to-babeleslint-parser-for-react-apps/
+
+se modifico los pasos para que sea transparente.
+
+## formatear al guardar archivo Prettier.
+
+necesitamos instalar el plugin esbenp.prettier-vscode
+
+y entrar a los settings de vscode, y configurar el formateado al guardar "format on save"
+y configurar el formateador por defecto a prettier.
+
+tambien se modifico npm start, para que formate el codigo y luego ejecute.
