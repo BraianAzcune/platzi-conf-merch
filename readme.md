@@ -146,3 +146,10 @@ en el estado actual lo  que hace esto es:
 
 Ante un commit, si hay algun archivo que sea .js o .jsx, entonces ejecutara esos tres comandos, si todos salen bien. confirmara el commit, sino lo rechaza.
 
+# clase 21 arquitecura de vistas y componentes. React-router
+
+```bash
+npm install react-router-dom
+```
+
+con React-router, definiremos las rutas que queremos y que componentes hay que mostrar para cada routa, hay que agregar una configuracion a webpack y dev server para que ande y listo.
