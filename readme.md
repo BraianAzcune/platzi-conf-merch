@@ -159,3 +159,9 @@ maquetacion y estilos.
 
 # clase 23
 mostrar la tienda estatica.
+
+# clase 24
+mostrar el carrito estatico.
+
+# clase 25
+mostrar seccion informacion.
