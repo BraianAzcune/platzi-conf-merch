@@ -156,3 +156,6 @@ con React-router, definiremos las rutas que queremos y que componentes hay que m
 
 # clase 22
 maquetacion y estilos.
+
+# clase 23
+mostrar la tienda estatica.

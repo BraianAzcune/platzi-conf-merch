@@ -1,9 +1,9 @@
 import React from 'react';
 
+/* eslint-disable react/react-in-jsx-scope */
+import initialState from '../initialState';
+import Products from '../components/Products';
+
 export default function Home() {
-    return (
-        <div>
-            <h1>Home</h1>
-        </div>
-    );
+    return <Products products={initialState.products} />;
 }
