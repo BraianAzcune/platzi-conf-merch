@@ -153,3 +153,6 @@ npm install react-router-dom
 ```
 
 con React-router, definiremos las rutas que queremos y que componentes hay que mostrar para cada routa, hay que agregar una configuracion a webpack y dev server para que ande y listo.
+
+# clase 22
+maquetacion y estilos.
