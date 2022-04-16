@@ -165,3 +165,6 @@ mostrar el carrito estatico.
 
 # clase 25
 mostrar seccion informacion.
+
+# clase 26
+maquetacion flujo de pago.
