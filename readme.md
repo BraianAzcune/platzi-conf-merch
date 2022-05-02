@@ -168,3 +168,6 @@ mostrar seccion informacion.
 
 # clase 26
 maquetacion flujo de pago.
+
+# clase 27
+se agregaron iconos de font-awesome. se importa la libreria en el index.html
