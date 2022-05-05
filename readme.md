@@ -171,3 +171,8 @@ maquetacion flujo de pago.
 
 # clase 27
 se agregaron iconos de font-awesome. se importa la libreria en el index.html
+
+# clase 28
+creando customhook para usar el estado inicial definido en un archivo aparte, y dos funciones que sirven para manipular dicho estado.
+
+esto mas adelante se proveera en un contexto para que todos los componentes de la aplicacion puedan acceder a el.
