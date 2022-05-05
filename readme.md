@@ -176,3 +176,7 @@ se agregaron iconos de font-awesome. se importa la libreria en el index.html
 creando customhook para usar el estado inicial definido en un archivo aparte, y dos funciones que sirven para manipular dicho estado.
 
 esto mas adelante se proveera en un contexto para que todos los componentes de la aplicacion puedan acceder a el.
+
+# clase 29
+utlizamos el contexto para hacer que header muestre cuantas cosas se agregan al carrito.
+eso si, cada vez que hacemos click en comprar, eso actualiza state, y por lo tanto hace que el Provider definido en App, cambie, haciendo que todo se re-renderice.
