@@ -180,3 +180,15 @@ esto mas adelante se proveera en un contexto para que todos los componentes de l
 # clase 29
 utlizamos el contexto para hacer que header muestre cuantas cosas se agregan al carrito.
 eso si, cada vez que hacemos click en comprar, eso actualiza state, y por lo tanto hace que el Provider definido en App, cambie, haciendo que todo se re-renderice.
+
+## IMPORTANTE useContext re render
+useContext esta pensado para aquellas cosas que cambian poco, y necesitan ser usado por casi todos los componentes, algo como por ejemplo "modo oscuro","idioma", "usuario", "fecha", cosas que cambien poco y sean muy usadas.
+
+cada vez que se modifique el estado del contexto, alli donde este el componente Context.Provider, lanzara una re renderizacion a todos los componentes que contengan.
+En este caso como esta en App, obliga a renderizar a todos los componentes.
+
+Por lo que el uso que se le esta haciendo no seria el adecuado.
+
+Para esto seria mas adecuado usar algo como Redux.
+
+<table><tbody><tr><td><p style="text-align:center"><strong>useContext&nbsp;</strong></p></td><td><p style="text-align:center"><strong>Redux</strong></p></td></tr><tr><td>useContext is a hook.</td><td>Redux is a state management library.</td></tr><tr><td>It is used to share data.</td><td>It is used to manage data and state.</td></tr><tr><td>Changes are made with the Context value.</td><td>Changes are made with pure functions i.e. reducers.</td></tr><tr><td>We can change the state in it.</td><td>The state is read-only. We cannot change them directly.</td></tr><tr><td>It re-renders all components whenever there is any update in the provider’s value prop.</td><td>It only re-render the updated components.</td></tr><tr><td>It is better to use with small applications.</td><td>It is perfect for larger applications.&nbsp;</td></tr><tr><td>It is easy to understand and requires less code.</td><td>It is quite complex to understand.</td></tr></tbody></table>
