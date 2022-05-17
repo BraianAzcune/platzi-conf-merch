@@ -17,9 +17,17 @@ export default function useInitialState() {
             cart: state.cart.filter((item) => item.id !== payload.id),
         });
     }
+
+    function addToBuyer(buyer) {
+        setState({
+            ...state,
+            buyer: [...state.buyer, buyer],
+        });
+    }
     return {
         addToCart,
         removeFromCart,
         state,
+        addToBuyer,
     };
 }

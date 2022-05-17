@@ -208,3 +208,7 @@ Para esto seria mas adecuado usar algo como Redux.
 
 agregar useContext en la pagina de checkout.
 y reparar bug que habia en producto.
+
+# clase 31
+
+rellenar formulario, y de paso vemos como usar FormData.
