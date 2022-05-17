@@ -11,7 +11,7 @@ export default function Product({ product, handleAddToCart }) {
                 </h2>
                 <p>{product.description}</p>
             </div>
-            <button onClick={handleAddToCart} type="button">
+            <button onClick={() => handleAddToCart(product)} type="button">
                 Comprar
             </button>
         </div>
