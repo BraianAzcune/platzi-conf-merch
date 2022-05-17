@@ -24,7 +24,16 @@ export default function useInitialState() {
             buyer: [...state.buyer, buyer],
         });
     }
+
+    function addNewOrder(payload) {
+        setState({
+            ...state,
+            orders: [...state.orders, payload],
+        });
+    }
+
     return {
+        addNewOrder,
         addToCart,
         removeFromCart,
         state,

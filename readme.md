@@ -212,3 +212,15 @@ y reparar bug que habia en producto.
 # clase 31
 
 rellenar formulario, y de paso vemos como usar FormData.
+
+# clase 32
+
+usar hook de react-router-dom para navegar a cualquier pagina del sitio.
+
+# clase 33
+
+aceptar pagos con paypal.
+
+```bash
+npm install react-paypal-button-v2
+```
